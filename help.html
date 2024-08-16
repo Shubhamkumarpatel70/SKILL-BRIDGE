@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>SKILLS BRIDGE | HELP</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/logo.jpg" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+     <!-- Spinner Start -->
+     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div c  lass="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-colored shadow sticky-top p-0">
+    <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <img src="img/logo.jpg" class="logo" alt="Logo">
+        <h2 class="m-0 ms-2 text-white">SKILLS</h2>
+        <h2 class="m-0 text-primary"> BRIDGE</h2>
+    </a>
+    
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="internship_domain.html" class="nav-item nav-link">Internship Domain</a>
+            <a href="verify_certificate.html" class="nav-item nav-link">Verify Certificate</a>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Others</a>
+                <div class="dropdown-menu fade-down m-0">
+                    <a href="contact.html" class="dropdown-item">Contact</a>
+                    <a href="student_login_dashboard.html" class="dropdown-item">Student Dashboard</a>
+                </div>
+            </div>
+            <a href="registration.html" class="nav-item nav-link d-lg-none">Registration</a>
+        </div>
+        <a href="registration.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Registration<i class="fa fa-arrow-right ms-3"></i></a>
+    </div>
+</nav>
+<!-- Navbar End -->
+     <!-- Header Start -->
+     <div class="container-fluid bg-primary py-5 mb-5 page-header" style="background: url('img/about.jpg') no-repeat center center; background-size: cover;">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-3 text-white animated slideInDown">HELP</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Help</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <!-- Content for the new container box -->
+            <div class="text-center">
+                <h6 class="section-title bg-white text-center text-primary px-3">FAQ</h6>
+                <h1 class="mb-5">FAQ and Help</h1>
+            </div>
+            <div>
+                <label for="search-box">Search:</label>
+                <div id="search-box-container">
+                    <input type="text" id="search-box" placeholder="Type your question">
+                    <span id="clear-icon" class="fas fa-times-circle"></span>
+                </div>
+            </div>
+            <div id="faq-container">
+                <!-- FAQ Section 1 -->
+                <div class="faq-section">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        What is Skills Bridge?
+                        <i class="fas fa-plus" style="display: inline;"></i>
+                        <i class="fas fa-minus" style="display: none;"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Skills Bridge is an online platform that connects students with diverse internship opportunities across various domains.</p>
+                    </div>
+                </div>
+    
+                <!-- FAQ Section 2 -->
+                <div class="faq-section">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        How do I apply for an internship on Skills Bridge?
+                        <i class="fas fa-plus" style="display: inline;"></i>
+                        <i class="fas fa-minus" style="display: none;"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>To apply for an internship, you need to register first on our platform, browse available internships, and submit your application through the specified process.</p>
+                    </div>
+                </div>
+    
+                <!-- FAQ Section 3 -->
+                <div class="faq-section">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        What types of internships are available on Skills Bridge?
+                        <i class="fas fa-plus" style="display: inline;"></i>
+                        <i class="fas fa-minus" style="display: none;"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Skills Bridge offers internships in various fields, including technology, business, marketing, and design. The available internships may vary. <a href="internship_domain.html">Click here for more details...</a></p>
+                    </div>
+                </div>
+    
+                <!-- FAQ Section 4 -->
+                <div class="faq-section">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        How are interns selected for opportunities on Skills Bridge?
+                        <i class="fas fa-plus" style="display: inline;"></i>
+                        <i class="fas fa-minus" style="display: none;"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Interns are selected based on their qualifications, experience, and how well they match the requirements outlined by the internship posting.</p>
+                    </div>
+                </div>
+    
+                <!-- FAQ Section 5 -->
+                <div class="faq-section">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        Can I apply for multiple internships simultaneously?
+                        <i class="fas fa-plus" style="display: inline;"></i>
+                        <i class="fas fa-minus" style="display: none;"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you can apply for multiple internships in different domains at the same time.</p>
+                    </div>
+                </div>
+    
+                <!-- FAQ Section 6 -->
+                <div class="faq-section">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        How long do internships on Skills Bridge typically last?
+                        <i class="fas fa-plus" style="display: inline;"></i>
+                        <i class="fas fa-minus" style="display: none;"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The duration of internships varies. Some are short-term, while others may extend to several months. The duration will be specified in the internship posting.</p>
+                    </div>
+                </div>
+    
+                <!-- FAQ Section 7 -->
+                <div class="faq-section">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        Can I intern with Skills Bridge if I am an international student?
+                        <i class="fas fa-plus" style="display: inline;"></i>
+                        <i class="fas fa-minus" style="display: none;"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, Skills Bridge welcomes international students to apply for internships. However, certain internships may have specific eligibility criteria.</p>
+                    </div>
+                </div>
+    
+                <!-- FAQ Section 8 -->
+                <div class="faq-section">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        How can I provide feedback or report issues on the Skills Bridge platform?
+                        <i class="fas fa-plus" style="display: inline;"></i>
+                        <i class="fas fa-minus" style="display: none;"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can provide feedback or report issues by contacting our support team through the <a href="contact.html">contact</a> section.</p>
+                    </div>
+                </div>
+    
+                <!-- FAQ Section 9 -->
+                <div class="faq-section">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        Can I apply for internships if I am still in my first year of college?
+                        <i class="fas fa-plus" style="display: inline;"></i>
+                        <i class="fas fa-minus" style="display: none;"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, Skills Bridge welcomes applications from students in various academic years. Some internships may have specific eligibility criteria, so make sure to check the requirements for each opportunity.</p>
+                    </div>
+                </div>
+    
+                <!-- FAQ Section 10 -->
+                <div class="faq-section">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        How do I register on Skills Bridge?
+                        <i class="fas fa-plus" style="display: inline;"></i>
+                        <i class="fas fa-minus" style="display: none;"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>To register on Skills Bridge, simply click on the <a href="registration.html">registration</a> button and fill out the basic details.</p>
+                    </div>
+                </div>
+    
+                <!-- FAQ Section 11 -->
+                <div class="faq-section">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        Does Skills Bridge provide any certificates?
+                        <i class="fas fa-plus" style="display: inline;"></i>
+                        <i class="fas fa-minus" style="display: none;"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, Skills Bridge provides both offer letters and completion certificates.</p>
+                    </div>
+                </div>
+    
+                <!-- FAQ Section 12 -->
+                <div class="faq-section">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        How do I access my internship tasks on Skills Bridge?
+                        <i class="fas fa-plus" style="display: inline;"></i>
+                        <i class="fas fa-minus" style="display: none;"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can access your internship tasks by logging into your dashboard and navigating to the 'Tasks' section. From there, you can view and download your assigned tasks.</p>
+                    </div>
+                </div>
+    
+                <!-- FAQ Section 13 -->
+                <div class="faq-section">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        Can I extend my internship duration on Skills Bridge?
+                        <i class="fas fa-plus" style="display: inline;"></i>
+                        <i class="fas fa-minus" style="display: none;"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Extensions are subject to approval by the organization offering the internship. You can request an extension by contacting the organization directly through your dashboard.</p>
+                    </div>
+                </div>
+    
+                <!-- FAQ Section 14 -->
+                <div class="faq-section">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        How do I contact support for technical issues on Skills Bridge?
+                        <i class="fas fa-plus" style="display: inline;"></i>
+                        <i class="fas fa-minus" style="display: none;"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>If you encounter technical issues, you can reach out to our support team through the <a href="contact.html">contact</a> page or email us directly.</p>
+                    </div>
+                </div>
+    
+                <!-- FAQ Section 15 -->
+                <div class="faq-section">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        What should I do if I miss a task deadline on Skills Bridge?
+                        <i class="fas fa-plus" style="display: inline;"></i>
+                        <i class="fas fa-minus" style="display: none;"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>If you miss a task deadline, you should immediately inform your internship coordinator and request a possible extension. However, timely submission is highly encouraged.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sorry-message" class="faq-section">
+        <div class="faq-question">
+            Sorry, no results found.
+        </div>
+        <div class="faq-answer">
+            <p>Please try a different search term.</p>
+        </div>
+    </div>
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Quick Links</h4>
+                <a class="btn btn-link" href="">About Us</a>
+                <a class="btn btn-link" href="contact.html">Contact Us</a>
+                <a class="btn btn-link" href="internship_domain.html">Domain Select</a>
+                <a class="btn btn-link" href="terms&conditions.html">Terms & Conditions</a>
+                <a class="btn btn-link" href="help.html">FAQs & Help</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Contact</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Roorkee, Uttrakhand, India</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 62XXXXXXX5</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>info.studentera@gmail.com</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Gallery</h4>
+                <div class="row g-2 pt-2">
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Current Time</h4>
+                <p id="currentTime">Loading...</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy;<span id="currentYear"></span> Copyright <b>Skills Bridge</b>, All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  
+<!-- Footer End -->
+
+ <!-- Back to Top -->
+ <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+   <!-- JavaScript Libraries -->
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="lib/wow/wow.min.js"></script>
+   <script src="lib/easing/easing.min.js"></script>
+   <script src="lib/waypoints/waypoints.min.js"></script>
+   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+   <!-- Template Javascript -->
+   <script src="js/main.js"></script>
+   
+<script>
+    function toggleAnswer(icon) {
+        const faqSection = icon.closest('.faq-section');
+        const answer = faqSection.querySelector('.faq-answer');
+        const plusIcon = icon.classList.contains('fa-plus');
+
+        // Check if the answer is currently visible
+        const isAnswerVisible = answer.style.display === 'block';
+
+        // Hide all other answers
+        const allAnswers = document.querySelectorAll('.faq-answer');
+        allAnswers.forEach(otherAnswer => {
+            if (otherAnswer !== answer) {
+                otherAnswer.style.display = 'none';
+            }
+        });
+
+        // Toggle the display of the clicked answer
+        answer.style.display = isAnswerVisible ? 'none' : 'block';
+
+        // Toggle the plus/minus icon
+        if (plusIcon) {
+            icon.classList.remove('fa-plus');
+            icon.classList.add('fa-minus');
+        } else {
+            icon.classList.remove('fa-minus');
+            icon.classList.add('fa-plus');
+        }
+    }
+
+
+</script>
+
+<script>
+    // Function to toggle answer and plus/minus icons
+    function toggleAnswer(question) {
+        const faqSection = question.closest('.faq-section');
+        const answer = faqSection.querySelector('.faq-answer');
+        const plusIcon = question.querySelector('.fas.fa-plus');
+        const minusIcon = question.querySelector('.fas.fa-minus');
+
+        // Check if the answer is currently visible
+        const isAnswerVisible = answer.style.display === 'block';
+
+        // Hide all other answers
+        const allAnswers = document.querySelectorAll('.faq-answer');
+        allAnswers.forEach(otherAnswer => {
+            if (otherAnswer !== answer) {
+                otherAnswer.style.display = 'none';
+            }
+        });
+
+        // Toggle the display of the clicked answer
+        answer.style.display = isAnswerVisible ? 'none' : 'block';
+
+        // Toggle the plus/minus icons
+        plusIcon.style.display = isAnswerVisible ? 'inline' : 'none';
+        minusIcon.style.display = isAnswerVisible ? 'none' : 'inline';
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        // ... (your existing search and clear functionality) ...
+    });
+</script>
+<!-- Add this script after your existing scripts -->
+<script>
+    // Function to toggle answer and plus/minus icons
+    function toggleAnswer(question) {
+        const faqSection = question.closest('.faq-section');
+        const answer = faqSection.querySelector('.faq-answer');
+        const plusIcon = question.querySelector('.fas.fa-plus');
+        const minusIcon = question.querySelector('.fas.fa-minus');
+
+        // Check if the answer is currently visible
+        const isAnswerVisible = answer.style.display === 'block';
+
+        // Hide all other answers
+        const allAnswers = document.querySelectorAll('.faq-answer');
+        allAnswers.forEach(otherAnswer => {
+            if (otherAnswer !== answer) {
+                otherAnswer.style.display = 'none';
+            }
+        });
+
+        // Toggle the display of the clicked answer
+        answer.style.display = isAnswerVisible ? 'none' : 'block';
+
+        // Toggle the plus/minus icons
+        plusIcon.style.display = isAnswerVisible ? 'inline' : 'none';
+        minusIcon.style.display = isAnswerVisible ? 'none' : 'inline';
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        // ... (your existing search and clear functionality) ...
+    });
+</script>
+<!-- Add this script after your existing scripts -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const searchBox = document.getElementById('search-box');
+        const clearIcon = document.getElementById('clear-icon');
+        const faqContainer = document.getElementById('faq-container');
+        const sorryMessage = document.getElementById('sorry-message');
+
+        // FAQ data
+        const faqSections = document.querySelectorAll('.faq-section');
+
+        // Function to handle search
+        function handleSearch() {
+            const searchTerm = searchBox.value.toLowerCase();
+
+            // Hide all FAQ sections
+            faqSections.forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Filter and display only the matching FAQ sections
+            faqSections.forEach(section => {
+                const question = section.querySelector('.faq-question');
+                const questionText = question.textContent.toLowerCase();
+                const isMatch = questionText.includes(searchTerm);
+
+                if (isMatch) {
+                    section.style.display = 'block';
+                }
+            });
+
+            // Show/hide the clear icon based on whether the search box is empty
+            clearIcon.style.display = searchTerm !== '' ? 'block' : 'none';
+
+            // Show/hide the "Sorry, no results found" message
+            const matchingSections = faqContainer.querySelectorAll('.faq-section[style="display: block;"]');
+            sorryMessage.style.display = matchingSections.length === 0 ? 'block' : 'none';
+        }
+
+        // Event listener for input changes in the search box
+        searchBox.addEventListener('input', handleSearch);
+
+        // Event listener for clicking the clear icon
+        clearIcon.addEventListener('click', function () {
+            searchBox.value = ''; // Clear the search box
+            clearIcon.style.display = 'none'; // Hide the clear icon
+            handleSearch(); // Trigger the search handling to update FAQ section visibility
+        });
+    });
+</script>
+<script>
+    // Get the current year
+var currentYear = new Date().getFullYear();
+
+// Set the current year in the footer
+document.getElementById('currentYear').innerText = currentYear;
+</script>
+</body>
+</html>

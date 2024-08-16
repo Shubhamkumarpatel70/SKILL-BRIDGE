@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SKILLS BRIDGE | REGISTRATION</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="img/logo.jpg" rel="icon">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .form-container { max-width: 600px; margin: 0 auto; background: #ffffff; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+        .form-container .form-group { margin-bottom: 15px; }
+        .form-container .form-control { border-radius: 5px; }
+        .form-container .btn-primary { border-radius: 5px; background-color: #4285f4; border: none; }
+        .form-container .btn-primary:hover { background-color: #357ae8; }
+        .form-container #generatedId { font-weight: bold; }
+        .form-container .btn-copy { background-color: #e0e0e0; border: none; cursor: pointer; }
+        .form-container .btn-copy:hover { background-color: #d1d1d1; }
+        .form-container .btn-copy i { margin-right: 5px; }
+        /* Checkmark animation styles */
+.checkmark-circle {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.checkmark-circle .background {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #28a745;
+  position: absolute;
+}
+
+.checkmark-circle .checkmark {
+  position: absolute;
+  display: block;
+  width: 45px;
+  height: 90px;
+  border-radius: 5px;
+  border: 5px solid white;
+  border-width: 0 5px 5px 0;
+  transform-origin: bottom left;
+  left: 25px;
+  top: 45px;
+  transform: rotate(45deg);
+  animation: checkmark 0.5s ease-in-out;
+}
+
+@keyframes checkmark {
+  0% {
+    height: 0;
+    width: 0;
+    opacity: 1;
+  }
+  20% {
+    height: 0;
+    width: 45px;
+    opacity: 1;
+  }
+  40% {
+    height: 90px;
+    width: 45px;
+    opacity: 1;
+  }
+  100% {
+    height: 90px;
+    width: 45px;
+    opacity: 1;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-colored shadow sticky-top p-0">
+    <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <img src="img/logo.jpg" class="logo" alt="Logo">
+        <h2 class="m-0 ms-2 text-white">SKILLS</h2>
+        <h2 class="m-0 text-primary"> BRIDGE</h2>
+    </a>
+    
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="internship_domain.html" class="nav-item nav-link">Internship Domain</a>
+            <a href="verify_certificate.html" class="nav-item nav-link">Verify Certificate</a>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Others</a>
+                <div class="dropdown-menu fade-down m-0">
+                    <a href="contact.html" class="dropdown-item">Contact</a>
+                    <a href="student_login_dashboard.html" class="dropdown-item">Student Dashboard</a>
+                </div>
+            </div>
+            <a href="registration.html" class="nav-item nav-link d-lg-none">Registration</a>
+        </div>
+        <a href="registration.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Registration<i class="fa fa-arrow-right ms-3"></i></a>
+    </div>
+</nav>
+<!-- Navbar End -->
+ <!-- Header Start -->
+ <div class="container-fluid bg-primary py-5 mb-5 page-header" style="background: url('img/about.jpg') no-repeat center center; background-size: cover;">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <h1 class="display-3 text-white animated slideInDown">Registration Form</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">Registration</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Header End -->
+
+     <!-- Internship Program Details Section -->
+     <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="mb-1">Registration Details</h1>
+               
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="mb-3">
+                    <h6>Duration: 4 Weeks / 7 Weeks</h6>
+                    <h6>Mode: Online & Task Based</h6>
+                    <h6>Perk: Offer Letter & Completion Certificate</h6>
+                    <h6>Training: No training will be provided</h6>
+                </div>
+            </div>
+            <!-- You can add more content or styles as needed -->
+        </div>
+
+    <div class="container py-4">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>What You Will Get ?</h3>
+                    <ul>
+                        <li>Internship offer letter</li>
+                        <li>Internship completion certificate</li>
+                        <li>Technical Experience</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4>Requirement</h4>
+                    <ul>
+                        <li> Strong knowledge of Python programming language.</li>
+                        <li>Good problem-solving skills.</li>
+                        <li>Basic knowledge about PHP and MySql</li>
+                        <li>Python GUI libraries such as Tkinter.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4>Summary</h4>
+                    <ul>
+                        <li>Gain valuable hands-on experience in web development</li>
+                        <li>Completion of assigned tasks is a requirement of the internship & many more.</li>
+                        <li>The Internship is 4weeks/7weeks</li>
+                        <li>Internship completion certificate.</li>
+                    </ul>
+                </div>
+            </div>
+            <h6>Note :</h6>
+            <h6>
+                1. Please don't apply many times for the same domain, or your application will be consider as invalid.
+            </h6>
+            <h6>2. Please fill all the required fields carefully, information provided will be used in completion certificate.</h6>
+        </div>
+     </div>
+    <!-- Form Start -->
+    <div class="container">
+        <div class="form-container">
+            <h2 class="mb-4 text-center" style="font-family:'Times New Roman', Times, serif">Registration Form</h2>
+            <form id="registrationForm" action="https://script.google.com/macros/s/AKfycbxqegtOMgUWK3OmTYgx74H1AW4LJTs8z4BNPsYEzWEJYMCHcqmITWcadmbjpXGp6pkg/exec" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter E-mail" required>
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile Number</label>
+                    <input type="tel" class="form-control" id="mobile" name="mobile" pattern="[0-9]{10}" placeholder="1234567890" required>
+                </div>
+                <div class="form-group">
+                    <button type="button" class="btn btn-primary" id="generateIdButton">Generate ID</button>
+                </div>
+                <div class="form-group text-center">
+                    <label for="generatedId">Generated ID:</label>
+                    <div id="generatedId">N/A</div>
+                    <button type="button" class="btn-copy" id="copyIdButton">
+                        <i class="bi bi-clipboard"></i> Copy
+                    </button>
+                </div>
+                <div class="form-group">
+                    <label for="college">College/University</label>
+                    <input type="text" class="form-control" id="college" name="college" placeholder="Enter College Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="branch">Branch</label>
+                    <input type="text" class="form-control" id="branch" name="branch" placeholder="Enter Branch" required>
+                </div>
+                <div class="form-group">
+                    <label for="academicYear">Academic Year</label>
+                    <select class="form-control" id="academicYear" name="academicYear">
+                        <option value="">Select</option>
+                        <option value="1">1st Year</option>
+                        <option value="2">2nd Year</option>
+                        <option value="3">3rd Year</option>
+                        <option value="4">4th Year</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <input type="text" class="form-control mt-2" id="otherYear" name="otherYear" style="display: none;">
+                </div>
+                <div class="form-group">
+                    <label for="domain">Internship Domain</label>
+                    <select class="form-control" id="domain" name="domain" required>
+                        <option value="">Select Domain</option>
+                        <option value="Web Development">Web Development</option>
+                        <option value="Java Development">Java Development</option>
+                        <option value="Android Development">Android Development</option>
+                        <option value="Python Development">Python Development</option>
+                        <option value="Data Analyst">Data Analyst</option>
+                        <option value="Graphic Design">Graphic Design</option>
+                        <option value="Carousel Design">Carousel Design</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="duration">Internship Duration</label>
+                    <select class="form-control" id="duration" name="duration" required>
+                        <option value="">Select Duration</option>
+                        <option value="1 Month">1 Month</option>
+                        <option value="3 Months">3 Months</option>
+                        <option value="6 Months">6 Months</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="paymentOption">Payment Option</label>
+                    <select class="form-control" id="paymentOption" name="paymentOption" required>
+                        <option value="">Select Payment Option</option>
+                        <option value="Scan and Pay">Scan and Pay</option>
+                    </select>
+                    <div id="paymentImage" style="display: none;">
+                        <img src="payment-image.jpg" alt="Payment" />
+                        <div id="timer">5:00</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="registrationFile">Upload Payment screenshot</label>
+                    <input type="file" class="form-control" id="registrationFile" name="registrationFile">
+                </div>
+                <div class="form-group text-center mt-4">
+                    <button type="submit" class="btn btn-primary" id="registrationButton" disabled>Submit</button>
+                </div>
+            </form>
+            <div id="errorContainer" class="alert alert-danger mt-3" style="display: none;">
+                <p id="errorMessage"></p>
+            </div>
+            <div id="successContainer" class="mt-3 text-center" style="display: none;">
+                <p id="successMessage"></p>
+            </div>
+        </div>
+    </div>
+    <!-- Form End -->
+
+<!-- Modal -->
+<div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="thankYouModalLabel">Success</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <div class="checkmark-circle">
+                    <div class="background"></div>
+                    <div class="checkmark"></div>
+                </div>
+                <p id="thankYouMessage" class="mt-3">Thank you for your submission!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+  
+
+    <!-- Footer Start -->
+<div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Quick Links</h4>
+                <a class="btn btn-link" href="">About Us</a>
+                <a class="btn btn-link" href="contact.html">Contact Us</a>
+                <a class="btn btn-link" href="internship_domain.html">Domain Select</a>
+                <a class="btn btn-link" href="terms&conditions.html">Terms & Conditions</a>
+                <a class="btn btn-link" href="help.html">FAQs & Help</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Contact</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Roorkee, Uttrakhand, India</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 62XXXXXXX5</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>info.studentera@gmail.com</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Gallery</h4>
+                <div class="row g-2 pt-2">
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Current Time</h4>
+                <p id="currentTime">Loading...</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy;<span id="currentYear"></span> Copyright <b>Skills Bridge</b>, All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- JavaScript Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('academicYear').addEventListener('change', function() {
+            const otherYearField = document.getElementById('otherYear');
+            otherYearField.style.display = this.value === 'Other' ? 'block' : 'none';
+        });
+
+        document.getElementById('paymentOption').addEventListener('change', function() {
+            const paymentImage = document.getElementById('paymentImage');
+            paymentImage.style.display = this.value === 'Scan and Pay' ? 'block' : 'none';
+            if (this.value === 'Scan and Pay') {
+                startTimer();
+            }
+        });
+
+        function startTimer() {
+            const timerElement = document.getElementById('timer');
+            let time = 300; // 5 minutes in seconds
+
+            const interval = setInterval(function() {
+                const minutes = Math.floor(time / 60);
+                const seconds = time % 60;
+                timerElement.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+                time--;
+
+                if (time < 0) {
+                    clearInterval(interval);
+                    timerElement.textContent = '00:00';
+                    document.getElementById('paymentImage').innerHTML = '<i class="fas fa-sync-alt"></i>';
+                }
+            }, 1000);
+        }
+
+        document.getElementById('generateIdButton').addEventListener('click', function() {
+            const name = document.getElementById('name').value.trim();
+            const mobile = document.getElementById('mobile').value.trim();
+            
+            if (name && mobile.length === 10) {
+                const generatedId = generateId(name, mobile);
+                document.getElementById('generatedId').textContent = generatedId;
+            } else {
+                alert('Please enter a valid name and mobile number.');
+            }
+        });
+
+        function generateId(name, mobile) {
+            const firstLetter = name.charAt(0).toUpperCase();
+            const middleLetter = name.charAt(Math.floor(name.length / 2)).toUpperCase();
+            const lastTwoDigits = mobile.slice(-2);
+            const id = `SB${firstLetter}${mobile.charAt(0)}${middleLetter}${lastTwoDigits}`;
+            return id;
+        }
+
+        document.getElementById('copyIdButton').addEventListener('click', function() {
+            const generatedId = document.getElementById('generatedId').textContent;
+            if (generatedId !== 'N/A') {
+                navigator.clipboard.writeText(generatedId).then(() => {
+                    alert('ID copied to clipboard!');
+                }).catch(err => {
+                    console.error('Failed to copy:', err);
+                });
+            } else {
+                alert('No ID to copy.');
+            }
+        });
+
+        const registrationForm = document.getElementById('registrationForm');
+        const registrationFileField = document.getElementById('registrationFile');
+        const registrationButton = document.getElementById('registrationButton');
+        const errorContainer = document.getElementById('errorContainer');
+        const errorMessage = document.getElementById('errorMessage');
+        const successContainer = document.getElementById('successContainer');
+        const successMessage = document.getElementById('successMessage');
+        const generatedIdField = document.getElementById('generatedId');
+
+        function checkRegistrationFields() {
+            if (registrationFileField.value) {
+                registrationButton.disabled = false;
+            } else {
+                registrationButton.disabled = true;
+            }
+        }
+
+        registrationFileField.addEventListener('change', checkRegistrationFields);
+
+        registrationForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const formData = new FormData(registrationForm);
+
+            fetch('http://localhost:3000/upload-file', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                if (response.ok) {
+                    return response.json();
+                }
+                return response.text().then(text => { throw new Error(text); });
+            })
+            .then(data => {
+                if (data.status === 'success') {
+                    successMessage.textContent = 'File uploaded successfully! File URL: ' + data.fileUrl;
+                    successContainer.style.display = 'block';
+                    errorContainer.style.display = 'none';
+                    generatedIdField.textContent = data.generatedId; // Update generated ID
+                } else {
+                    errorMessage.textContent = data.message;
+                    errorContainer.style.display = 'block';
+                    successContainer.style.display = 'none';
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                errorMessage.textContent = 'An error occurred during the file upload: ' + error.message;
+                errorContainer.style.display = 'block';
+                successContainer.style.display = 'none';
+            });
+        });
+
+        // Function to show the thank you modal
+function showThankYouModal() {
+    const thankYouModal = new bootstrap.Modal(document.getElementById('thankYouModal'));
+    thankYouModal.show();
+
+    // Close the modal after 2 seconds (2000ms)
+    setTimeout(() => {
+        thankYouModal.hide();
+    }, 2000); // Adjust time as needed
+}
+
+// Example event listener for the submit button
+document.getElementById('submitButton').addEventListener('click', function() {
+    showThankYouModal();
+});
+
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Handle form submission
+            document.getElementById('registrationForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the default form submission
+    
+                // Show the thank you modal
+                var thankYouModal = new bootstrap.Modal(document.getElementById('thankYouModal'));
+                thankYouModal.show();
+            });
+    
+            // Handle the "Generate ID" button click
+            document.getElementById('generateIdButton').addEventListener('click', function() {
+                var name = document.getElementById('name').value;
+                var mobile = document.getElementById('mobile').value;
+    
+                if (name && mobile.length === 10) {
+                    var generatedId = generateID(name, mobile);
+                    document.getElementById('generatedId').textContent = generatedId;
+                } else {
+                    alert('Please fill in the name and mobile number correctly.');
+                }
+            });
+    
+            // Handle the "Copy" button click
+            document.getElementById('copyIdButton').addEventListener('click', function() {
+                var generatedId = document.getElementById('generatedId').textContent;
+                navigator.clipboard.writeText(generatedId)
+                    .then(() => alert('ID copied to clipboard'))
+                    .catch(err => console.error('Failed to copy ID: ', err));
+            });
+    
+            // Function to generate ID based on name and mobile number
+            function generateID(name, mobile) {
+                if (name.length > 0 && mobile.length === 10) {
+                    var firstLetter = name.charAt(0).toUpperCase();
+                    var middleLetter = name.charAt(Math.floor(name.length / 2)).toUpperCase();
+                    var lastTwoDigits = mobile.slice(-2);
+                    var generatedId = `SB${firstLetter}${mobile.charAt(0)}${middleLetter}${lastTwoDigits}`;
+                    return generatedId;
+                }
+                return 'N/A';
+            }
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>SKILLS BRIDGE | FEEDBACK</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Favicon -->
+    <link href="img/logo.jpg" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <style>
+        .container {
+            max-width: 1150px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+        
+        .rating-stars {
+            display: flex;
+            gap: 10px;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        .rating-stars .star {
+            color: #ddd;
+            transition: color 0.3s;
+        }
+
+        .rating-stars .star.selected {
+            color: #f39c12;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #004085;
+        }
+
+        .form-label {
+            font-weight: 600;
+        }
+
+        .rating-label {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+     <!-- Spinner Start -->
+     <div id="spinner" class="d-none bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-colored shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <img src="img/logo.jpg" class="logo" alt="Logo">
+            <h2 class="headlogo m-0 ms-2 text-white">SKILLS</h2>
+            <h2 class="headlogo m-0 text-primary">BRIDGE</h2>
+        </a>
+
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="internship_domain.html" class="nav-item nav-link">Internship Domain</a>
+                <a href="verify_certificate.html" class="nav-item nav-link">Verify Certificate</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Others</a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="contact.html" class="dropdown-item">Contact</a>
+                        <a href="student_login_dashboard.html" class="dropdown-item">Student Dashboard</a>
+                    </div>
+                </div>
+                <a href="registration.html" class="nav-item nav-link d-lg-none">Registration</a>
+            </div>
+            <a href="registration.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Registration<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary py-5 mb-5 page-header" style="background: url('img/about.jpg') no-repeat center center; background-size: cover;">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-3 text-white animated slideInDown">FEEDBACK</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Feedback</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+  <!-- Feedback Form Start -->
+<div class="feedback container py-5 justify-content-center">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <form id="feedbackForm" class="row g-3">
+                <h2 class="text-center mb-4" style="font-family: serif;">Feedback Form</h2>
+                <div class="alert alert-secondary text-center mb-4" style="font-family: Arial, sans-serif; font-size: 1rem; font-weight: 500; background-color: #f8f9fa; border-radius: 8px; padding: 10px; color: #333; width: 600px;">
+                    Your feedback is important to us. Please take a moment to share your feedback.
+                </div>
+                <div class="col-md-12">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="col-md-12">
+                    <label for="email" class="form-label">Your Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="col-md-12">
+                    <label for="college" class="form-label">Your College</label>
+                    <input type="text" class="form-control" id="college" placeholder="Enter your college" required>
+                </div>
+                <div class="col-md-12">
+                    <label for="internshipDomain" class="form-label">Internship Domain</label>
+                    <select id="internshipDomain" class="form-select" required>
+                        <option value="" selected disabled>Select your domain</option>
+                        <option value="Web Development">Web Development</option>
+                        <option value="Java Development">Java Development</option>
+                        <option value="Android Development">Android Development</option>
+                        <option value="Python Development">Python Development</option>
+                        <option value="Data Analyst">Data Analyst</option>
+                        <option value="Graphic Design">Graphic Design</option>
+                        <option value="Carousel Design">Carousel Design</option>
+                    </select>
+                </div>
+                <div class="col-md-12">
+                    <label for="rating" class="form-label">Rating</label>
+                    <input type="hidden" id="rating" name="rating" value="">
+                    <div class="rating-stars">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                    <div id="ratingLabel" class="rating-label"></div>
+                </div>
+                <div class="col-md-12">
+                    <label for="comments" class="form-label">Feedback</label>
+                    <textarea id="comments" class="form-control" rows="5" placeholder="Share your feedback" required></textarea>
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary">Submit Feedback</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Feedback Form End -->
+
+
+    <!-- Thank You Modal -->
+    <div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="thankYouModalLabel">Thank You!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Thank you ! Your feedback submit successfully</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Quick Links</h4>
+                <a class="btn btn-link" href="">About Us</a>
+                <a class="btn btn-link" href="contact.html">Contact Us</a>
+                <a class="btn btn-link" href="internship_domain.html">Domain Select</a>
+                <a class="btn btn-link" href="terms&conditions.html">Terms & Conditions</a>
+                <a class="btn btn-link" href="help.html">FAQs & Help</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Contact</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Roorkee, Uttrakhand, India</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 62XXXXXXX5</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>info.studentera@gmail.com</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Gallery</h4>
+                <div class="row g-2 pt-2">
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Current Time</h4>
+                <p id="currentTime">Loading...</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy;<span id="currentYear"></span> Copyright <b>Skills Bridge</b>, All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <!-- Custom Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const stars = document.querySelectorAll('.rating-stars .star');
+            const ratingInput = document.getElementById('rating');
+            const ratingLabel = document.getElementById('ratingLabel');
+
+            stars.forEach(star => {
+                star.addEventListener('click', function() {
+                    const value = this.getAttribute('data-value');
+                    ratingInput.value = value;
+                    stars.forEach(s => {
+                        if (s.getAttribute('data-value') <= value) {
+                            s.classList.add('selected');
+                        } else {
+                            s.classList.remove('selected');
+                        }
+                    });
+                    // Update rating label
+                    if (value == 1) {
+                        ratingLabel.textContent = 'Bad'; 
+                    } 
+                    else if (value == 2) {
+                        ratingLabel.textContent = 'Poor';
+                    }
+                    else if (value == 3) {
+                        ratingLabel.textContent = 'Average';
+                    } else if (value == 4) {
+                        ratingLabel.textContent = 'Good';
+                    } else if (value == 5) {
+                        ratingLabel.textContent = 'Excellent';
+                    }
+                });
+            });
+
+            const form = document.getElementById('feedbackForm');
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                const thankYouModal = new bootstrap.Modal(document.getElementById('thankYouModal'));
+                thankYouModal.show();
+                form.reset();
+                stars.forEach(star => star.classList.remove('selected'));
+                ratingLabel.textContent = ''; // Clear rating label
+            });
+        });
+    </script>
+</body>
+</html>

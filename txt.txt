@@ -1,0 +1,1 @@
+i say that suppose if user select web development option from internship domain and when click on submit button then redirect to webdevelopment.html does it possible 

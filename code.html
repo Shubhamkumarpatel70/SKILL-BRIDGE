@@ -1,0 +1,16 @@
+function doGet(e){
+    var x = HtmlService.createTemplateFromFile("");
+    var y = x.evaluate();
+    var z = z.setXFrameOptionMode(HtmlService.XFrameOptionsMode.ALLOWALL);
+    return z;
+}
+
+function getSheetData(){
+    var a = SpreedsheetApp.getActiveSpreadsheet();
+    var b = a.gatSheetByName('Sheet1');
+    var c = b.getDataRange();
+    return c.getValues();
+}
+
+
+https://script.google.com/macros/s/AKfycbxm8-EuBWLeLB_eJqb_dKY7siWDKONS5bo5LdUbfP6IVgBvORgrEqYCBchYAYUINWPf/exec

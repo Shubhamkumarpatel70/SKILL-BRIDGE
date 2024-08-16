@@ -1,0 +1,32 @@
+[
+  {
+    "student_name": "Shubham",
+    "certificate_id": "12345",
+    "verified_by": "Shubham"
+  },
+  {
+    "student_name": "Rohit",
+    "certificate_id": "67890",
+    "verified_by": "Ranjeet"
+  },
+  {
+    "student_name": "Azaz",
+    "certificate_id": "1235",
+    "verified_by": "Shubham"
+  },
+  {
+    "student_name": "Ranjeet",
+    "certificate_id": "123",  
+    "verified_by": "Shubham"
+  },
+  {
+    "student_name": "Ranjeet",
+    "certificate_id": "1023",  
+    "verified_by": "Shubham"
+  },
+  {
+    "student_name": "vikash",
+    "certificate_id": "12",
+    "verified_by": "Rohit"
+  }
+]

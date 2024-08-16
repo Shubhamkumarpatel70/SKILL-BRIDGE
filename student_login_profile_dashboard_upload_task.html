@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SKILLS BRIDGE | WEB DEVELOPMENT REGISTRATION</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="img/logo.jpg" rel="icon">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .form-container { 
+            max-width: 600px; 
+            margin: 0 auto; 
+            background: #ffffff; 
+            padding: 30px; 
+            border-radius: 10px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        }
+        .form-group { 
+            margin-bottom: 15px; 
+        }
+        .form-control { 
+            border-radius: 5px; 
+        }
+        .form-control:focus { 
+            border-color: #4285f4; 
+            box-shadow: 0 0 0 0.2rem rgba(66, 133, 244, 0.25); 
+        }
+        .btn-primary { 
+            border-radius: 5px; 
+            background-color: #4285f4; 
+            border: none; 
+        }
+        .btn-primary:hover { 
+            background-color: #357ae8; 
+        }
+        .btn-copy { 
+            background-color: #e0e0e0; 
+            border: none; 
+            cursor: pointer; 
+        }
+        .btn-copy:hover { 
+            background-color: #d1d1d1; 
+        }
+        .btn-copy i { 
+            margin-right: 5px; 
+        }
+        .form-group .input-group { 
+            margin-bottom: 15px; 
+        }
+        .form-group .input-group .input-group-text { 
+            border-radius: 5px 0 0 5px; 
+        }
+        .form-group .input-group .form-control { 
+            border-radius: 0 5px 5px 0; 
+        }
+        .dropdown-select { 
+            width: 100%; 
+            border-radius: 5px; 
+        }
+        .btn-verify { 
+            border-radius: 0 5px 5px 0; 
+            background-color: #4285f4; 
+            color: #fff; 
+            border: none; 
+        }
+        .btn-verify:hover { 
+            background-color: #357ae8; 
+        }
+        .btn-verify i { 
+            margin-right: 5px; 
+        }
+        .checkmark-circle { 
+            position: relative; 
+            width: 50px; 
+            height: 50px; 
+            display: inline-block; 
+        }
+        .checkmark-circle .background { 
+            border-radius: 50%; 
+            background: #4caf50; 
+            width: 100%; 
+            height: 100%; 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            transform: scale(0); 
+            transition: all 0.3s ease; 
+        }
+        .checkmark-circle .checkmark { 
+            position: absolute; 
+            top: 50%; 
+            left: 50%; 
+            width: 30px; 
+            height: 60px; 
+            border: solid white; 
+            border-width: 0 5px 5px 0; 
+            transform: rotate(45deg); 
+            transform-origin: left bottom; 
+            animation: draw 0.4s ease forwards; 
+        }
+        .checkmark-circle .checkmark.draw { 
+            transform: rotate(45deg); 
+        }
+        @keyframes draw { 
+            0% { 
+                transform: scale(0); 
+            }
+            100% { 
+                transform: scale(1); 
+            }
+        }
+        .important-notice {
+            background-color: #fff3cd;
+            color: #856404;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border: 1px solid #ffeeba;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+.important-notice strong {
+    font-size: 1.2em; /* Slightly larger font for the heading */
+    display: block; /* Block level to stand out */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.important-notice p {
+    font-size: 0.9em; /* Slightly smaller font for general text */
+    margin-bottom: 10px; /* Space below each paragraph */
+}
+
+.important-notice h6 {
+    font-size: 1em; /* Consistent font size for sub-headings */
+    margin-bottom: 5px; /* Space below each heading */
+}
+
+.important-notice h3, .important-notice h4 {
+    font-size: 1.1em; /* Slightly larger font for headings */
+    margin-top: 20px; /* Space above each heading */
+    margin-bottom: 10px; /* Space below each heading */
+}
+
+.important-notice ul {
+    padding-left: 20px; /* Indent for list items */
+    margin-bottom: 20px; /* Space below the list */
+}
+
+.important-notice ul li {
+    margin-bottom: 5px; /* Space below each list item */
+}
+
+.notice-details, .notice-note {
+    margin-top: 15px; /* Space above these sections */
+}
+
+    </style>
+</head>
+<body>
+
+     <!-- Spinner Start -->
+     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-colored shadow sticky-top p-0">
+    <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <img src="img/logo.jpg" class="logo" alt="Logo">
+        <h2 class="m-0 ms-2 text-white">SKILLS</h2>
+        <h2 class="m-0 text-primary"> BRIDGE</h2>
+    </a>
+    
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="internship_domain.html" class="nav-item nav-link">Internship Domain</a>
+            <a href="verify_certificate.html" class="nav-item nav-link">Verify Certificate</a>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Others</a>
+                <div class="dropdown-menu fade-down m-0">
+                    <a href="contact.html" class="dropdown-item">Contact</a>
+                    <a href="student_login_dashboard.html" class="dropdown-item">Student Dashboard</a>
+                </div>
+            </div>
+            <a href="registration.html" class="nav-item nav-link d-lg-none">Registration</a>
+        </div>
+        <a href="registration.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Registration<i class="fa fa-arrow-right ms-3"></i></a>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary py-5 mb-3 page-header">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-3 text-white animated slideInDown">UPLOAD TASKS</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Upload Task</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Form Start -->
+    <div class="container">
+        <div class="form-container">
+            <h2 class="mb-4 text-center">Upload Task</h2>
+            <form id="uploadForm" action="http://localhost:3000/upload-file" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="name">Student Name</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="domain">Internship Domain</label>
+                    <select class="form-control" name="domain" id="domain" required>
+                        <option value="">Select your domain</option>
+                        <option value="Web Development">Web Development</option>
+                        <option value="Java Development">Java Development</option>
+                        <option value="Android Development">Android Development</option>
+                        <option value="Python Development">Python Development</option>
+                        <option value="Data Analyst">Data Analyst</option>
+                        <option value="Graphic Design">Graphic Design</option>
+                        <option value="Carousel Design">Carousel Design</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="id">Certificate ID</label>
+                    <input type="text" class="form-control" name="id" id="id" placeholder="Enter your certificate ID" required>
+                    <div id="verificationStatus"></div>
+                </div>
+                <div class="form-group">
+                    <label for="registrationFile">Upload Task</label>
+                    <input type="file" class="form-control" id="registrationFile" name="registrationFile" required>
+                </div>
+                <div class="form-group text-center mt-4">
+                    <button type="submit" class="btn btn-primary" id="fetchButton" disabled>Submit</button>
+                </div>
+            </form>
+            <div id="errorContainer" class="alert alert-danger mt-3" style="display: none;">
+                <p id="errorMessage"></p>
+            </div>
+            <div id="downloadContainer" class="mt-3 text-center" style="display: none;">
+                <a href="#" class="btn btn-success" id="downloadButton">Download Task</a>
+            </div>
+            <div class="text-center mt-3">
+                <a href="registration.html" id="registrationButton" class="btn btn-outline-primary" style="display: none;">Register Here</a>
+            </div>
+        </div>
+    </div>
+    <!-- Form End -->
+
+    <!-- Footer Start -->
+    <!-- Your existing footer code here -->
+    <!-- Footer End -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="thankYouModalLabel">Thank You!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="thankYouMessage">Your task has been successfully submitted.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Start -->
+<div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Quick Links</h4>
+                <a class="btn btn-link" href="">About Us</a>
+                <a class="btn btn-link" href="contact.html">Contact Us</a>
+                <a class="btn btn-link" href="internship_domain.html">Domain Select</a>
+                <a class="btn btn-link" href="terms&conditions.html">Terms & Conditions</a>
+                <a class="btn btn-link" href="help.html">FAQs & Help</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Contact</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Roorkee, Uttrakhand, India</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 62XXXXXXX5</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>info.studentera@gmail.com</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Gallery</h4>
+                <div class="row g-2 pt-2">
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Current Time</h4>
+                <p id="currentTime">Loading...</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy;<span id="currentYear"></span> Copyright <b>Skills Bridge</b>, All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+    <!-- JS Libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('uploadForm');
+            const studentIdInput = document.getElementById('id');
+            const submitButton = document.getElementById('fetchButton');
+            const verificationStatus = document.getElementById('verificationStatus');
+            const thankYouModal = new bootstrap.Modal(document.getElementById('thankYouModal'));
+            const thankYouMessage = document.getElementById('thankYouMessage');
+            const errorContainer = document.getElementById('errorContainer');
+            const errorMessage = document.getElementById('errorMessage');
+            const downloadButton = document.getElementById('downloadButton');
+            const registrationButton = document.getElementById('registrationButton');
+    
+            function validateForm() {
+                const name = document.getElementById('name').value;
+                const domain = document.getElementById('domain').value;
+                const id = document.getElementById('id').value;
+                const file = document.getElementById('registrationFile').files.length;
+    
+                submitButton.disabled = !(name && domain && id && file);
+            }
+    
+            async function fetchCertificateById(certificateId) {
+    try {
+        const response = await fetch('certificate-verification/certificates.json'); // Update with actual path
+        if (!response.ok) {
+            throw new Error('Failed to load certificates file.');
+        }
+        const certificates = await response.json();
+        const certificate = certificates.find(cert => cert.certificate_id === certificateId);
+
+        if (certificate) {
+            console.log('Certificate Found:', certificate);
+            // You can update your UI here with the certificate data
+            return certificate;
+        } else {
+            console.log('Certificate ID not found.');
+            // Handle the case where the certificate ID does not exist
+            return null;
+        }
+    } catch (error) {
+        console.error('Error fetching certificate data:', error);
+        // Handle the error appropriately
+        return null;
+    }
+}
+ 
+
+    
+            form.addEventListener('input', validateForm);
+    
+            form.addEventListener('submit', async function (event) {
+                event.preventDefault();
+                const formData = new FormData(form);
+    
+                try {
+                    const response = await fetch(form.action, {
+                        method: form.method,
+                        body: formData
+                    });
+    
+                    if (response.ok) {
+                        const result = await response.json();
+    
+                        if (result.success) {
+                            thankYouMessage.textContent = 'Your task has been successfully submitted.';
+                            thankYouModal.show();
+                        } else {
+                            throw new Error(result.message || 'An error occurred while submitting the form.');
+                        }
+                    } else {
+                        throw new Error('Server error. Please try again later.');
+                    }
+                } catch (error) {
+                    errorContainer.style.display = 'block';
+                    errorMessage.textContent = error.message;
+                }
+            });
+    
+            studentIdInput.addEventListener('input', verifyStudentId);
+        });
+    </script>
+    
+</body>
+
+</html>

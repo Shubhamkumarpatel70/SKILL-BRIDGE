@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>SKILLS BRIDGE | REGISTRATION </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/logo.jpg" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        #paymentScreenshot {
+        display: none;
+    }
+        /* Style for modal overlay */
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            z-index: 1;
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+    
+        /* Style for modal content */
+        .modal-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: auto;
+            max-height: 80vh; /* Set a maximum height for the modal content */
+            overflow-y: auto; /* Enable vertical scrolling within the modal content */
+        }
+
+        #declineButton
+        {
+            background-color:red;
+        }
+
+    </style>
+    <style>
+    /* Style for submit button */
+    button[type="submit"],
+    button[type="reset"] {
+        background-color: #007bff; /* Blue color */
+        color: #fff; /* White text color */
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    /* Hover effect for submit button */
+    button[type="submit"]:hover,
+    button[type="reset"]:hover {
+        background-color: #0056b3; /* Darker shade of blue */
+    }
+</style>
+
+    
+</head>
+
+<body>
+  <!-- Spinner Start -->
+
+<!-- Spinner End -->
+
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-colored shadow sticky-top p-0">
+    <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <img src="img/logo.jpg" class="logo" alt="Logo">
+        <h2 class="m-0 ms-2 text-white">SKILLS</h2>
+        <h2 class="m-0 text-primary"> BRIDGE</h2>
+    </a>
+    
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="internship_domain.html" class="nav-item nav-link">Internship Domain</a>
+            <a href="verify_certificate.html" class="nav-item nav-link">Verify Certificate</a>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Others</a>
+                <div class="dropdown-menu fade-down m-0">
+                    <a href="contact.html" class="dropdown-item">Contact</a>
+                    <a href="student_login_dashboard.html" class="dropdown-item">Student Dashboard</a>
+                </div>
+            </div>
+            <a href="registration.html" class="nav-item nav-link d-lg-none">Registration</a>
+        </div>
+        <a href="registration.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Registration<i class="fa fa-arrow-right ms-3"></i></a>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+ <!-- Header Start -->
+ <div class="container-fluid bg-primary py-5 mb-5 page-header" style="background: url('img/about.jpg') no-repeat center center; background-size: cover;">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <h1 class="display-3 text-white animated slideInDown">New User Registration</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">Registration</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Header End -->
+
+ <!-- Internship Program Details Section -->
+ <div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h1 class="mb-1">Registration Form</h1>
+           
+        </div>
+    </div>
+</div>
+
+<div class="container py-4">
+<div class="container py-4">
+        <h6>Note :</h6>
+        <h6>
+            1. Please don't apply many times for the same domain, or your application will be consider as invalid.
+        </h6>
+        <h6>2. Please fill all the required fields carefully, information provided will be used to generate certificate.</h6>
+    </div>
+ </div>
+ <!-- Internship Program Details Section -->  
+ <!-- Registration form Start -->
+
+    <div class="rgform">
+        <form id="contactForm" action="https://script.google.com/macros/s/AKfycbzY8STlwv2OwkkzZ0-BWObCNtDSYPyOHnNZ-aZX2K6HTb6Gxidjg7OJv4LEgFNzokdw/exec" method="POST">
+            <h3><center>Registration Form</center> </h3>
+            <label for="year"><b>Name :</b></label>
+            <input type="text" placeholder="Type Name Here" name="Name">
+            <label for="year"><b>Please Enter E-mail :</b></label>
+            <input type="email" placeholder="Type E-mail Here" name="Email">
+            <label for="year"><b>Please Enter Mobile Number:</b></label>
+            <input type="number" placeholder="Type Mobile Number Here" name="Mobile">
+            <label for="year"><b>Please Enter Collage/University :</b></label>
+            <input type="text" placeholder="Type College Here" name="College">
+            <label for="year"><b>Please Enter Collage  Branch :</b></label>
+            <input type="text" placeholder="Type College Branch Here" name="Branch">
+            <label for="year"><b>Academic Year:</b></label>
+            <select name="Year" id="year" onchange="toggleOtherTextBox()">
+                <option value="Not Selected" disabled selected>Select An Option</option>
+                <option value="1st Year">1st Year</option>
+                <option value="2nd Year">2nd Year</option>
+                <option value="3rd Year">3rd Year</option>
+                <option value="4th Year">4th Year</option>
+                <option value="Passed Out">Passed Out</option>
+                <option value="Other">Other</option>
+            </select>
+            <div id="otherTextBox" style="display: none;">
+                <label for="otherYear">Please Specify :</label>
+                <input type="text" placeholder="Type Here" name="OtherYear">
+            </div>
+            <label for="year"><b>Please Select Domain :</b></label>
+            <select name="InternshipDomain">
+                <option value="Not Selected" disabled selected>Select An Option</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Android Development">Android Development</option>
+                <option value="Java Development">Java Development</option>
+                <option value="Python Development">Python Development</option>
+                <option value="Data Analysts">Data Analysts</option>
+                <option value="Graphics/Poster Design">Graphics/Poster Design</option>
+            </select>
+
+            <label for="join"><b>Join LinkedIn?</b></label>
+            <select name="LinkedinJoin" id="join" onchange="toggleLinkedInLink()">
+                <option value="Not Selected" disabled selected>Select An Option</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+            <div id="linkedinLink" style="display: none;">
+                LinkedIn : <a href="https://www.linkedin.com/company/student-era/">Join LinkedIn</a>
+            </div>
+
+        <!-- Payment option -->
+<label for="payment"><b>Payment Option:</b></label>
+<select name="PaymentOption" id="payment" onchange="togglePaymentDetails()" required>
+    <option value="Not Selected" disabled selected>Select A Payment Option</option>
+    <option value="scan & pay">Scan & Pay</option>
+    <option value="upi">Pay With UPI</option>
+    <!-- Add more payment options if needed -->
+</select>
+
+<!-- UPI payment details -->
+<div id="upiInstructions" style="display: none;">
+    <p>Make a UPI payment to the following UPI ID:</p>
+    <p><strong>studentera@kotak</strong></p>
+    <p>After making the payment, enter the UPI transaction ID below:</p>
+    <label for="upiTransactionId"><b>UPI Transaction ID:</b></label>
+    <input type="text" placeholder="Enter UPI Transaction ID" name="upiTransactionId">
+
+    <!-- Upload UPI ID Image option -->
+    <div id="upiImageUpload" style="display: none;">
+        <label for="upiImage"><b>Upload UPI ID Image:</b></label>
+        <input type="file" name="upiImage" id="upiImage" accept="image/*">
+    </div>
+</div>
+
+
+<div id="bankDetails" style="display: none;">
+    <!-- Bank transfer details -->
+    <p>Make a Bank Transfer payment to the following Bank details :</p>
+    <p><strong>Account Number : 8048475859</strong></p>
+    <p><strong>Ifsc Code : KKBK0005486 </strong></p>
+    <p><strong>Bank Name : KOTAK MAHINDRA BANK</strong></p>
+    <p>After making the payment, enter the transaction ID below:</p>
+    <label for="bankTransactionId"><b>Transaction ID:</b></label>
+    <input type="text" placeholder="Enter Transaction ID" name="bankTransactionId">
+    <div id="bankImageUpload" style="display: none;">
+        <label for="bankImage"><b>Upload Bank Transfer Image:</b></label>
+        <input type="file" name="bankImage" id="bankImage" accept="image/*">
+    </div>
+    
+</div>
+
+<div id="paymentDetails" style="display: none;">
+    <!-- Image for Scan & Pay -->
+    <div id="scanAndPayImage" style="display: none;">
+        <img src="img/SHUBHAM_1704050741463.jpg" alt="Scan & Pay Image" style="max-width: 200px; max-height: 200px; margin-top: 10px;">
+    </div>
+
+    <div id="timerDisplay" style="display: none;"></div>
+
+    <div id="paymentScreenshot" style="display: none;">
+        <label for="paymentImage"><b>Upload Payment Screenshot:</b></label>
+        <input type="file" name="paymentImage" id="paymentImage" accept="image/*">
+    </div>
+    
+</div>
+
+<div class="terms-container">
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="termsCheckbox" name="termsCheckbox">
+        <label class="form-check-label" name="termsCheckbox" for="termsCheckbox">I agree to the <a href="#" class="terms-link">Terms and Conditions</a></label>
+    </div>
+
+    <div class="overlay">
+        <div class="modal-content">
+            <h3>Terms and Conditions</h3>
+            <p>
+                Last Updated: [Date]
+
+1. Acceptance of Terms
+
+By accessing or using the [Your Company Name] website, services, or products (collectively referred to as the "Service"), you agree to comply with and be bound by these terms and conditions. If you do not agree to these terms, please do not use the Service.
+
+2. Changes to Terms
+
+[Your Company Name] reserves the right to modify or replace these terms at any time. Any changes will be effective immediately upon posting. You are responsible for regularly reviewing these terms. Continued use of the Service after any changes constitutes acceptance of those changes.
+
+3. User Accounts
+
+a. You may be required to create an account to use certain features of the Service. You are responsible for maintaining the confidentiality of your account information and for all activities that occur under your account.
+
+b. You agree to provide accurate and complete information during the registration process and to update such information to keep it current.
+
+c. [Your Company Name] reserves the right to suspend or terminate your account if any information provided is inaccurate, false, or incomplete.
+
+4. Use of the Service
+
+a. You agree to use the Service only for lawful purposes and in accordance with these terms.
+
+b. You are prohibited from violating or attempting to violate the security of the Service, including, but not limited to:
+   i. Unauthorized access to any part of the Service,
+   ii. Interference with the proper functioning of the Service.
+
+c. [Your Company Name] may terminate or suspend your access to the Service immediately, without notice, for conduct that [Your Company Name] believes violates these terms or is harmful to other users or third parties, or for any other reason.
+
+5. Intellectual Property
+
+a. All content on the Service, including text, graphics, logos, images, and software, is the property of [Your Company Name] and is protected by intellectual property laws.
+
+b. You may not modify, publish, transmit, participate in the transfer, sell, create derivative works, or in any way exploit any of the content, in whole or in part.
+
+6. Limitation of Liability
+
+a. [Your Company Name] is not liable for any direct, indirect, incidental, consequential, or punitive damages arising out of your use or inability to use the Service.
+
+b. The Service is provided "as is" and "as available" without any warranties of any kind, either expressed or implied.
+
+7. Governing Law
+
+These terms and conditions are governed by and construed in accordance with the laws of [Your Jurisdiction].
+
+8. Contact Information
+
+If you have any questions or concerns regarding these terms, please contact [Your Company Name] at [Your Contact Information].
+
+            </p>
+        </div>
+    </div>
+</div>
+<button type="submit" name="submit">Submit</button>
+            <button type="reset" class="reset">Reset</button>
+            <button type="button" onclick="goBack()">Back to Home</button>
+        </form>
+    </div>
+<!-- Registration form End -->
+
+      <!-- Footer Start -->
+      <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Quick Link</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="internship_domain.html">Domain Select</a>
+                    <a class="btn btn-link" href="terms&conditions.html">Terms & Condition</a>
+                    <a class="btn btn-link" href="help.html">FAQs & Help</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Roorkee, Uttrakhand, India</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 62XXXXXXX5</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info.studentera@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Gallery</h4>
+                    <div class="row g-2 pt-2">
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Newsletter</h4>
+                    <div class="position-relative mx-auto" style="max-width: 500px;">
+                        <form id="newsletter-form" class="d-flex">
+                            <input class="form-control border-0 flex-grow-1 py-0 ps-0 pe-0" type="text" id="newsletter-email" placeholder="Your email">
+                            <button type="button" class="btn btn-primary py-2 ms-2" onclick="subscribeNewsletter()">Subscribe</button>
+                        </form>
+                        <p id="newsletter-message" class="text-success"></p>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy;<span id="currentYear"></span> Copyright <b>Student Era</b> , All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+  <!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzY8STlwv2OwkkzZ0-BWObCNtDSYPyOHnNZ-aZX2K6HTb6Gxidjg7OJv4LEgFNzokdw/exec';
+    const form = document.getElementById('contactForm');
+    const successMessageDiv = document.getElementById('successMessage');
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        // Assuming you are using Fetch API for form submission
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data); // Log the entire response to the console
+
+                if (data.result === 'success') {
+                    // Display success message
+                    successMessageDiv.innerHTML = '<p>Form submitted successfully!</p>';
+                } else {
+                    // Handle other cases (e.g., display error message)
+                    successMessageDiv.innerHTML = '<p>Error submitting the form.</p>';
+                    console.error('Error submitting form. Server response:', data);
+                }
+            })
+            .catch(error => {
+                successMessageDiv.innerHTML = '<p>Error submitting the form.</p>';
+                console.error('Error:', error);
+            });
+    });
+</script>
+<script>
+    // Call togglePaymentScreenshot initially
+togglePaymentScreenshot();
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Set the countdown time in seconds
+    const countdownTimeInSeconds =180; // Change this value according to your needs
+
+    // Get the image element
+    const scanAndPayImage = document.getElementById("scanAndPayImage");
+
+    // Display the timer
+    const timerDisplay = document.getElementById("timerDisplay");
+    timerDisplay.style.display = "block";
+
+    // Start the countdown
+    let countdown = countdownTimeInSeconds;
+    updateTimerDisplay();
+    const countdownInterval = setInterval(function () {
+        countdown--;
+        updateTimerDisplay();
+
+        // Check if the countdown is over
+        if (countdown <= 0) {
+            clearInterval(countdownInterval);
+            blurImage();
+        }
+    }, 1000);
+
+       // Function to update the timer display
+       function updateTimerDisplay() {
+            // Check if the countdown is over
+            if (countdown <= 0) {
+                clearInterval(countdownInterval);
+                timerDisplay.textContent = 'Qr Code expired!'; // Display the message
+                blurImage(); // Blur the image or take any other action
+            } else {
+                // Change text color based on remaining time
+                if (countdown > 20) {
+                    timerDisplay.style.color = 'green'; // More than 30 seconds, display in green
+                } else if (countdown <= 15) {
+                    timerDisplay.style.color = 'red'; // Below or equal to 15 seconds, display in red
+                } else {
+                    timerDisplay.style.color = ''; // Default color for the rest of the time
+                }
+
+                // Update the timer text
+                timerDisplay.textContent = `Time remaining: ${countdown} seconds`;
+            }
+        }
+
+    // Function to blur the image
+    function blurImage() {
+    var scanAndPayImage = document.getElementById('scanAndPayImage');
+    if (scanAndPayImage) {
+        scanAndPayImage.style.filter = "blur(5px)"; // Adjust the blur intensity as needed
+    }
+}
+});
+
+function togglePaymentDetails() {
+        var paymentOption = document.getElementById('payment');
+        var paymentDetails = document.getElementById('paymentDetails');
+        var scanAndPayImage = document.getElementById('scanAndPayImage');
+        var timerDisplay = document.getElementById('timerDisplay');
+
+        // Clear any existing timer
+        clearInterval(timerInterval);
+
+        if (paymentOption.value === 'scan & pay') {
+            paymentDetails.style.display = 'block';
+            scanAndPayImage.style.display = 'block';  // Display the image for Scan & Pay
+
+            // Refresh the image every 2 minutes (adjust the interval as needed)
+            setInterval(function () {
+                refreshImage(scanAndPayImage);
+            }, 1000);  // 2 minutes in milliseconds
+
+            // Display the countdown timer
+            timerDisplay.style.display = 'block';
+
+            // Start the countdown
+            startCountdown();
+        } else {
+            paymentDetails.style.display = 'none';
+            scanAndPayImage.style.display = 'none';
+            timerDisplay.style.display = 'none';
+        }
+        togglePaymentScreenshot();
+    }
+
+    function togglePaymentOptionDetails() {
+        var paymentOptionType = document.getElementById('paymentOptionType');
+        var referenceNumberDetails = document.getElementById('referenceNumberDetails');
+        var transactionIdDetails = document.getElementById('transactionIdDetails');
+
+        if (paymentOptionType.value === 'referenceNumber') {
+            referenceNumberDetails.style.display = 'block';
+            transactionIdDetails.style.display = 'none';
+        } else if (paymentOptionType.value === 'transactionId') {
+            referenceNumberDetails.style.display = 'none';
+            transactionIdDetails.style.display = 'block';
+        } else {
+            referenceNumberDetails.style.display = 'none';
+            transactionIdDetails.style.display = 'none';
+        }
+    }
+
+    function validateForm() {
+    var form = document.forms['google-sheet'];
+    var name = form.elements['name'].value;
+    var email = form.elements['email'].value;
+    var mobile = form.elements['mobile'].value;
+    var college = form.elements['college'].value;
+    var branch = form.elements['branch'].value;
+    var year = form.elements['year'].value;
+    var otherYear = form.elements['otherYear'].value;
+    var domain = form.elements['domain'].value;
+    var join = form.elements['join'].value;
+    var payment = form.elements['payment'].value;
+    var paymentOptionType = form.elements['paymentOptionType'].value;
+    var referenceNumber = form.elements['referenceNumber'].value;
+    var transactionId = form.elements['transactionId'].value;
+
+    // Additional fields for UPI
+    var upiTransactionId = form.elements['upiTransactionId'].value;
+    var upiImage = form.elements['upiImage'].files[0];
+
+    // Additional fields for Bank Transfer
+    var bankTransactionId = form.elements['bankTransactionId'].value;
+    var bankImage = form.elements['bankImage'].files[0];
+
+    // Add validation for required fields
+    if (
+        !name || !email || !mobile || !college || !branch ||
+        (year === 'Other' && !otherYear) || domain === 'Not Selected' ||
+        join === 'Not Selected' || payment === 'Not Selected' ||
+        (payment === 'upi' && (!upiTransactionId || !upiImage)) ||
+        (payment === 'bank transfer' && (!bankTransactionId || !bankImage)) ||
+        !form.elements['termsCheckbox'].checked
+    ) {
+        var errorMessage = "Please fill in all the required fields:\n";
+        if (!name) errorMessage += "- Name\n";
+        if (!email) errorMessage += "- Email\n";
+        if (!mobile) errorMessage += "- Mobile Number\n";
+        if (!college) errorMessage += "- College/University\n";
+        if (!branch) errorMessage += "- College Branch\n";
+        if (year === 'Not Selected' || (year === 'Other' && !otherYear)) errorMessage += "- Academic Year\n";
+        if (domain === 'Not Selected') errorMessage += "- Domain\n";
+        if (join === 'Not Selected') errorMessage += "- Join LinkedIn\n";
+        if (payment === 'Not Selected') errorMessage += "- Payment Option\n";
+        if (payment === 'upi' && (!upiTransactionId || !upiImage)) errorMessage += "- UPI Transaction ID and UPI ID Image\n";
+        if (payment === 'bank transfer' && (!bankTransactionId || !bankImage)) errorMessage += "- Bank Transaction ID and Bank Transfer Image\n";
+        if (!form.elements['termsCheckbox'].checked) errorMessage += "- Please agree to the Terms and Conditions\n";
+
+        alert(errorMessage);
+        blurImage(); // Blur the image or take any other action
+        return false;
+    }
+
+    return true; // Return true to allow form submission
+}
+
+
+
+function togglePaymentScreenshot() {
+    var paymentOption = document.getElementById('payment');
+    var paymentScreenshot = document.getElementById('paymentScreenshot');
+
+    if (paymentOption.value === 'scan & pay') {
+        paymentScreenshot.style.display = 'block';
+    } else {
+        paymentScreenshot.style.display = 'none';
+    }
+}
+
+// Add this function to refresh the image every 2 minutes
+function refreshImage(imageElement) {
+        // Replace the image source with the same source to force a refresh
+        var src = imageElement.src;
+        imageElement.src = '';
+        imageElement.src = src;
+    }
+
+        // Function to handle the payment option change
+function handlePaymentOptionChange() {
+    var paymentOption = document.getElementById('payment');
+    var paymentDetails = document.getElementById('paymentDetails');
+    var paymentScreenshot = document.getElementById('paymentScreenshot');
+
+    // Clear any existing timer
+    clearInterval(timerInterval);
+
+    if (paymentOption.value === 'scan & pay') {
+        paymentDetails.style.display = 'block';
+        paymentScreenshot.style.display = 'block';  // Display the image upload option
+        // ... (Your existing code for handling scan & pay)
+    } else {
+        paymentDetails.style.display = 'none';
+        paymentScreenshot.style.display = 'none';  // Hide the image upload option
+        // ... (Your existing code for other payment options)
+    }
+}
+
+       // Attach the function to the payment option change event
+document.getElementById('payment').addEventListener('change', handlePaymentOptionChange);
+
+// Function to refresh the image every 2 minutes
+function refreshImage(imageElement) {
+    // Replace the image source with the same source to force a refresh
+    var src = imageElement.src;
+    imageElement.src = '';
+    imageElement.src = src;
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+        var termsCheckbox = document.getElementById('termsCheckbox');
+        var submitButton = document.querySelector('button[name="submit"]');
+
+        // Toggle the submit button based on checkbox state
+        termsCheckbox.addEventListener('change', function () {
+            submitButton.disabled = !termsCheckbox.checked;
+        });
+    });
+
+</script>
+
+
+<!-- Add this script to show/hide the terms modal -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var termsLink = document.querySelector('.terms-link');
+        var overlay = document.querySelector('.overlay');
+        var modalContent = document.querySelector('.modal-content');
+        var acceptButton = document.getElementById('acceptButton');
+        var declineButton = document.getElementById('declineButton');
+
+        // Show the overlay and modal when terms link is clicked
+        termsLink.addEventListener('click', function () {
+            overlay.style.display = 'flex';
+            modalContent.style.display = 'block';
+        });
+
+        // Hide the overlay and modal when clicking outside the modal content
+        overlay.addEventListener('click', function (event) {
+            if (event.target === overlay) {
+                overlay.style.display = 'none';
+                modalContent.style.display = 'none';
+            }
+        });
+
+        // Handle the "Accept" button click
+        acceptButton.addEventListener('click', function () {
+            overlay.style.display = 'none';
+            modalContent.style.display = 'none';
+
+            // Add any additional logic for when the user accepts the terms
+        });
+
+        // Handle the "Decline" button click
+        declineButton.addEventListener('click', function () {
+            overlay.style.display = 'none';
+            modalContent.style.display = 'none';
+
+            // Add any additional logic for when the user declines the terms
+        });
+    });
+</script>
+
+<script>
+    function togglePaymentDetails() {
+        var paymentOption = document.getElementById("payment").value;
+        var upiInstructions = document.getElementById("upiInstructions");
+        var bankDetails = document.getElementById("bankDetails");
+        var scanAndPayImage = document.getElementById("scanAndPayImage");
+        var timerDisplay = document.getElementById("timerDisplay");
+        var paymentScreenshot = document.getElementById("paymentScreenshot");
+        var upiImageUpload = document.getElementById("upiImageUpload");
+        var bankImageUpload = document.getElementById("bankImageUpload"); // New element for bank transfer image upload
+
+        // Hide all payment-related elements
+        upiInstructions.style.display = "none";
+        bankDetails.style.display = "none";
+        scanAndPayImage.style.display = "none";
+        timerDisplay.style.display = "none";
+        paymentScreenshot.style.display = "none";
+        upiImageUpload.style.display = "none";
+        bankImageUpload.style.display = "none"; // Hide bank transfer image upload initially
+
+        // Show the relevant element based on the selected payment option
+        if (paymentOption === "upi") {
+            upiInstructions.style.display = "block";
+            upiImageUpload.style.display = "block";
+        } else if (paymentOption === "bank transfer") {
+            bankDetails.style.display = "block";
+            bankImageUpload.style.display = "block"; // Show bank transfer image upload
+        } else if (paymentOption === "scan & pay") {
+            scanAndPayImage.style.display = "block";
+            timerDisplay.style.display = "block";
+            paymentScreenshot.style.display = "block";
+        }
+    }
+
+    // Call the function on page load to handle initial visibility
+    togglePaymentDetails();
+</script>
+    
+    <script>
+        function validateForm() {
+        
+            var paymentOption = form.elements['payment'].value;
+        
+            if (paymentOption === 'upi') {
+                var upiTransactionId = form.elements['upiTransactionId'].value;
+        
+                if (!upiTransactionId) {
+                    alert("Please enter the UPI Transaction ID.");
+                    return false;
+                }
+            }
+        
+            return true;
+        }
+        </script>
+        
+        <script>
+            // Get the current year
+       var currentYear = new Date().getFullYear();
+   
+   // Set the current year in the footer
+   document.getElementById('currentYear').innerText = currentYear;
+       </script>
+</body>
+</html>
